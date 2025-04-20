@@ -67,7 +67,7 @@ $ airflow scheduler
 ## ⚙️ Airflow
 * **Executor:** `LocalExecutor`
 * **Değişkenler:**
-  * `OPENWEATHER_API_KEY` – UI > Admin > Variables veya `scripts/load_airflow_vars.py` ile CLI’dan yükleyin.
+  * `WEATHER_API_KEY` – UI > Admin > Variables veya `scripts/load_airflow_vars.py` ile CLI’dan yükleyin.
 * **DAG:** `weather_api_spark_etl`
   * `BashOperator` → `spark-master` container’ında `weather-submit.sh` çağrılır
   * Başarısız olursa otomatik yeniden dener; loglar `./logs` volume’unda saklanır
