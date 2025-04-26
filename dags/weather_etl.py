@@ -8,7 +8,7 @@ with DAG(
     dag_id="weather_api_spark_etl",
     default_args=default_args,
     start_date=datetime(2024, 1, 1),
-    schedule_interval="* * * * *",
+    schedule="* * * * *",
     catchup=False,
     tags=["weather", "spark", "postgres"]
 ) as dag:
